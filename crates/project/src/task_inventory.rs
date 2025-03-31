@@ -219,6 +219,7 @@ impl Inventory {
             .and_then(|l| l.context_provider())
             .zip(file.as_deref())
         {
+            // TODO kb how to get this generically?
             let lsp_tasks = language_servers
                 .into_iter()
                 .map(|server| provider.lsp_tasks(file, server, cx))

@@ -792,7 +792,6 @@ impl ContextProvider for RustContextProvider {
         Some(TaskTemplates(task_templates))
     }
 
-    // TODO kb now call it
     fn lsp_tasks(
         &self,
         file: &dyn crate::File,
